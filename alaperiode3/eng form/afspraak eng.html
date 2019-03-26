@@ -1,0 +1,72 @@
+ <!DOCTYPE HTML>
+ <html>
+     <head>
+         <meta charset="UTF-8">
+         <title>Appointment</title>
+         <link rel="stylesheet" href="style.css">  
+         </head>
+
+         <body>
+
+
+<div id="p1">
+
+<fieldset>
+
+<legend>Appointment.</legend>
+
+<h2>Enter your personal data.</h2>
+<br>
+<form action="afspraak eng.php" method="POST">
+First name:<br>
+<input type="text" name="firstname" autocomplete="off" required>
+<br></br>
+Last name:<br>
+<input type="text" name="lastname" autocomplete="off" required>
+<br></br>
+E-mail:<br>
+<input type="email" name="email" required>
+<br>
+<br>
+BSN Number:<br>
+<input type="text" name="BSN" autocomplete="off" required>
+<br></br>
+Date of appointment:
+<br>
+<input type="date" name="bday"required>
+<br>
+<br>
+Phone number:<br>
+<input type="text" name="Telefoon" autocomplete="off" required>
+<br>
+<br>
+Postal code: <br>
+<input type="text" name="Postcode" autocomplete="off"required>
+<br>
+<br>
+Date of birth:
+<br>
+<input type="date" name="bday"required>
+<br>
+<br>
+Gender.<br>
+<select name="Geslacht">
+    <option value=""></option>
+    <option value="Man">Men</option>
+    <option value="Vrouw">Woman</option>
+    <option value="Anders">Different</option>
+</select>
+<br>
+<br>
+<h2>Questions?</h2>
+    <textarea name="message" rows="10" cols="30"></textarea>
+    <br>
+    <br>
+<input type="submit" value="verzend">
+
+
+</form>
+</fieldset>
+</div>
+</body>
+</html>

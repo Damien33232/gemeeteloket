@@ -1,0 +1,72 @@
+ <!DOCTYPE HTML>
+ <html>
+     <head>
+         <meta charset="UTF-8">
+         <title>Paspoortverlengen</title>
+         <link rel="stylesheet" href="style.css">  
+         </head>
+
+         <body>
+
+
+<div id="p1">
+
+<fieldset>
+
+<legend>Paspoort verlengen.</legend>
+
+<h2>Vul uw gegevens in.</h2>
+<br>
+<form action="verlengen.php" method="POST">
+Naam:<br>
+<input type="text" name="firstname" autocomplete="off" required>
+<br></br>
+Achternaam:<br>
+<input type="text" name="lastname" autocomplete="off" required>
+<br></br>
+E-mail:<br>
+<input type="email" name="email" required>
+<br>
+<br>
+BSN nummer:<br>
+<input type="text" name="BSN" autocomplete="off" required>
+<br></br>
+Datum aanvraag:
+<br>
+<input type="date" name="bday"required>
+<br>
+<br>
+Telefoon nmr:<br>
+<input type="text" name="Telefoon" autocomplete="off" required>
+<br>
+<br>
+Postcode: <br>
+<input type="text" name="Postcode" autocomplete="off"required>
+<br>
+<br>
+Geboortedatum:
+<br>
+<input type="date" name="bday"required>
+<br>
+<br>
+Geslacht.<br>
+<select name="Geslacht">
+    <option value=""></option>
+    <option value="Man">Man</option>
+    <option value="Vrouw">Vrouw</option>
+    <option value="Anders">Anders</option>
+</select>
+<br>
+<br>
+<h2>Vragen?</h2>
+    <textarea name="message" rows="10" cols="30"></textarea>
+    <br>
+    <br>
+<input type="submit" value="verzend">
+
+
+</form>
+</fieldset>
+</div>
+</body>
+</html>

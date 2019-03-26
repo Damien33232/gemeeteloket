@@ -1,0 +1,68 @@
+
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>kapvergunning</title>
+  <link rel="stylesheet"href="style.css">
+
+</head>
+
+<body>
+
+
+
+  <div id="di">
+
+  <fieldset>
+    
+    <legend>Kap vergunning aanvragen.</legend>
+
+<h2>Vul uw gegevens in.</h2>
+
+<form action="kapvergunning.php" method="POST">
+  Naam:<br>
+  <input type="text" name="firstname" autocomplete="off" required>
+  <br></br>
+  Achternaam:<br>
+  <input type="text" name="lastname" autocomplete="off" required>
+  <br></br>
+  Geslacht.<br>
+  <select name="Geslacht">
+    <option value=""></option>
+    <option value="Man">Man</option>
+    <option value="Vrouw">Vrouw</option>
+    <option value="Anders">Anders</option>
+  </select>
+  <br>
+  <br>
+  E-mail:<br>
+  <input type="email" name="email" required>
+  <br>
+  <br>
+  Geboortedatum:<br>
+  <input type="date" name="bday"required>
+  <br>
+  <br>
+  Reden voor de kap:<br>
+  <input type="text" name="kap" autocomplete="off" required>
+  <br>
+  <br>
+
+
+  Bent u eigenaar/zakelijk gerechtigde van de grond waarop de boom staat?:<br><br>
+  <input type="radio" name="naam" value="yes"> Ja<br>
+  <input type="radio" name="naam" value="no">Nee<br>
+  <br>
+<h2>Vragen?</h2>
+  <textarea name="message" rows="10" cols="30"></textarea>
+  <br>  
+  <br>
+
+<input type="submit" value="verzend">
+</form>
+</fieldset>
+</div>
+</body>
+
+</html>
